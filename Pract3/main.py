@@ -20,3 +20,21 @@ def ujj(Coding):
 
 
 ujj("Hack")
+
+class Car:
+    def __init__(self,model,year):
+        self.model = model
+        self.year = year
+
+    def drive(self):
+         print(f"{self.model} {self.year} driving since")
+
+    def stop_drive(self):
+        print(f"{self.model} {self.year} now stopped driving")
+
+my_mercedes = Car('GLS','2023')
+
+print(f"My car model is {my_mercedes.model}")
+print(f"My car DOB is {my_mercedes.year}")
+my_mercedes.drive()
+my_mercedes.stop_drive()
